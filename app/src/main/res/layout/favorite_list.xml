@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/list_selector">
+    <mypocketvakil.example.com.pocketdictionary.custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="@dimen/sixteen"
+        android:paddingRight="@dimen/sixteen"
+        android:paddingStart="@dimen/sixteen"
+        android:paddingEnd="@dimen/sixteen"
+        android:id="@+id/favorite_text"
+        app:font="@string/OpenSans_Reguler"
+        android:layout_marginRight="@dimen/twentysix"
+        />
+    <mypocketvakil.example.com.pocketdictionary.custom.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/meaning"
+        android:textSize="20sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@+id/favorite_text"
+        android:paddingLeft="@dimen/sixteen"
+        android:paddingRight="@dimen/sixteen"
+        android:paddingStart="@dimen/sixteen"
+        android:paddingEnd="@dimen/sixteen"
+        android:id="@+id/favorite_summary"
+        app:font="@string/OpenSans_Reguler"
+        android:layout_marginTop="@dimen/six"
+        android:layout_marginRight="@dimen/sixtysix"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/fifteen"
+        android:layout_height="@dimen/fifteen"
+        android:id="@+id/favorite_image"
+        android:src="@drawable/next"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/ten"
+        android:layout_centerVertical="true"
+
+        />
+
+
+</RelativeLayout>
